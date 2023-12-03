@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('checkout') {
       steps {
-        git(url: 'https://github.com/BhanuprakashaB/aircompany.git', branch: 'main')
+        git 'https://github.com/BhanuprakashaB/aircompany.git'
       }
     }
 
