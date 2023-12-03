@@ -9,7 +9,7 @@ pipeline {
 
     stage('build') {
       steps {
-        bat 'env.PATH = \'C:/Users/pc/Downloads/apache-maven-3.6.3/bin;c:\\\\Windows\\\\System32\' 			 			bat label: \'\', script: \'mvn package\''
+        bat 'env.PATH = C:/Users/pc/Downloads/apache-maven-3.6.3/bin;c:/Windows/System32 			 		label: \'\', script: \'mvn package\''
       }
     }
 
