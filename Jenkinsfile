@@ -9,13 +9,7 @@ pipeline {
 
     stage('build') {
       steps {
-        bat(script: 'set MVN_HOME="C:\\apache-maven-3.9.5" set PATH=%MVN_HOME%\\bin;%PATH% ', returnStdout: true)
-      }
-    }
-
-    stage('buildproject') {
-      steps {
-        bat 'mvn package'
+        bat(script: 'start cmd.exe /c set MVN_HOME="C:\\apache-maven-3.9.5" set PATH=%MVN_HOME%\\bin;%PATH% mvn package', returnStdout: true)
       }
     }
 
